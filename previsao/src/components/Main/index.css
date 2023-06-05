@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.cidadeData{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2em 0;
+    color: #F0F0F0;
+    gap: 5px;
+    margin-top: 3em;
+}
+.cidadeData span{
+    font-weight: lighter;
+}
+.data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.data h2{
+    font-size: 5em;
+    color: #F0F0F0;
+}
+.data p{
+    color: #F0F0F0;
+    font-weight: 600;
+}
+.maisInformacoes{
+    color: #F0F0F0;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1em;
+}
+hr{
+    color: #F0F0F0;
+    margin-top: 2em;
+    margin-bottom: 1em;
+}

@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.divPesquisa{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 2.3em;
+}
+
+#pesquisar,#btnPesquisar{
+    border-radius: 8px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.25);
+}
+#pesquisar{
+    min-width: 262px;
+}
+#btnPesquisar{
+    cursor: pointer;
+}

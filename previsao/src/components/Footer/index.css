@@ -1,0 +1,22 @@
+footer{
+    background: #FFFFFF;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+footer span{
+    color: #434343;
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+footer .vel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}

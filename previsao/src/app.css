@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+html{
+    background: linear-gradient(169.09deg, #67DAFF -6.9%, rgba(42, 204, 255, 0.69) 59.26%, rgba(185, 96, 255, 0.19) 112.94%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    min-width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;;
+}
+
