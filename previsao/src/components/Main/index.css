@@ -40,3 +40,13 @@ hr{
     margin-top: 2em;
     margin-bottom: 1em;
 }
+#div-img{
+    height: calc(100vh - 90px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clima{
+    width: 40%;
+    
+}

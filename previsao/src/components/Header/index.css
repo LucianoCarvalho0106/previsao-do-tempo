@@ -19,6 +19,7 @@
 }
 #pesquisar{
     min-width: 262px;
+    text-transform: capitalize;
 }
 #btnPesquisar{
     cursor: pointer;
