@@ -2,6 +2,7 @@ import "./index.css"
 import Context from "../../Context/Context"
 import { useContext } from "react"
 import Loading from "../Loading/Loading"
+import clima from "../../images/clima.png"
 
 export default function Main(){
     const [data,setData] = useContext(Context)
@@ -33,7 +34,7 @@ export default function Main(){
                 <hr />
                 <p className="maisInformacoes">Mais Informações</p>
         </div>
-        ):<div id="div-img"><img id="clima" src="src/assets/clima.png"></img></div>}
+        ):<div id="div-img"><img id="clima" src={clima}></img></div>}
         </>   
     )
 }
