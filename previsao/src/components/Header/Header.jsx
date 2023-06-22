@@ -9,12 +9,23 @@ export default function Header(){
     const [dataContext,setDataContext] = useContext(Context)
     const [city,setCity] = useState("")
 
+   const handleKeyPress = async(event) => {
+        if (event.key === 'Enter') {
+            const data = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${APIKEY}&lang=pt_br&units=metric`)
+            setDataContext(data.data)
+            console.log(data.data)
+            setCity("")
+        }
+      }
+
     const buscarClima = async()=>{
 
         if(city === ""){
             alert("Digite o Nome Da Cidade!")
         }
         try {
+
+
             const data = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${APIKEY}&lang=pt_br&units=metric`)
             setDataContext(data.data)
             console.log(data.data)
@@ -27,7 +38,7 @@ export default function Header(){
 
     return(
         <div className="divPesquisa">
-            <input onChange={e=>setCity(e.target.value)} value={city} id="pesquisar" type="text" placeholder="Nome da Cidade ..." />
+            <input onKeyDown={handleKeyPress} onChange={e=>setCity(e.target.value)} value={city} id="pesquisar" type="text" placeholder="Nome da Cidade ..." />
             <button onClick={buscarClima} id="btnPesquisar"><AiOutlineSearch size={20}></AiOutlineSearch></button>
         </div>
             
